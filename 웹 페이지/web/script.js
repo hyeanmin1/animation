@@ -7,5 +7,5 @@ const IMG = new Image();
             const element = document.getElementById('animeImage');
             element.style.position = 'relative';
             element.style.top = '50px';
-            element.style.left = '20px';
+            element.style.left = '20px';    
         });
