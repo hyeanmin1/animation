@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023년 4분기 애니Pv 모음 사이트</title>
+  <style>
+     body {background-color:white ;}
+    
+    img.absolute  { 
+      position: absolute ;
+      left: 0px;
+      top: 0px;}
+    #image {
+      position: absolute;
+      top: 50px; /* 이미지를 위로 100px 이동 */
+      left: 350px; /* 이미지를 왼쪽으로 100px 이동 */
+    }
+    /* 토글 버튼 스타일 변경 */
+    #toggleButton {
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      position: absolute;
+      top: 285px; /* 버튼을 위로 이동 */
+      left: 350px; /*버튼을 왼쪽으로 이동 */}
+      
+    #image3{
+      position: absolute;
+      top: 50px; /* 이미지를 위로 100px 이동 */
+      left: 550px; /* 이미지를 왼쪽으로 100px 이동 */}
+    #starButton {
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      position: absolute;
+      top: 285px; /* 버튼을 위로 이동 */
+      left: 550px;}
+
+    #image5{
+      position: absolute;
+      top: 50px; /* 이미지를 위로 100px 이동 */
+      left: 750px; /* 이미지를 왼쪽으로 100px 이동 */}
+    #AButton {
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      position: absolute;
+      top: 285px; /* 버튼을 위로 이동 */
+      left: 750px;}
+  </style>
+</head>
+<body>
+  <img src="UI_1.png" alt="interpace" class="absolute">
+
+  <a href="https://16bitsensation-al.com">
+    <img id="image" src="16bit.png" alt="Image 1" width="150px" height="auto">
+  </a>
+  <button id="toggleButton">
+    <img id="toggleImage" src="별-removebg-preview (1).png" alt="Toggle Button" style="width: 30px; height: auto">
+  </button>
+
+  <a href="https://namu.wiki/w/B-PROJECT">
+    <img id="image3" src="b-project.png" alt="Image 3" width="150px" height="auto">
+  </a>
+  <button id="starButton">
+    <img id="starImage" src="별-removebg-preview (1).png" alt="starImage" style="width: 30px; height: auto">
+  </button>
+
+  <a href="https://youtu.be/zNWZjjkKfXs">
+    <img id="image5" src="MF.png" alt="Image 5" width="150px" height="auto">
+  </a>
+  <!-- 수정된 버튼 ID -->
+    <button id="AButton">
+      <img id="AImage" src="별-removebg-preview (1).png" alt="AImage" style="width: 30px; height: auto">
+    </button>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+  <script>
+    const toggleButton = document.getElementById("toggleButton");
+    const imageElement = document.getElementById("image");
+    let currentImage = 1;
+
+    toggleButton.addEventListener("click", () => {
+      if (currentImage === 1) {
+        imageElement.src = "16bit(2).png";
+        imageElement.alt = "Image 2";
+        currentImage = 2;
+      } else {
+        imageElement.src = "16bit.png";
+        imageElement.alt = "Image 1";
+        currentImage = 1;
+      }
+    });
+
+    const starButton = document.getElementById("starButton");
+    const imageElement3 = document.getElementById("image3");
+    let currentImage3 = 1;
+
+    starButton.addEventListener("click", () => {
+      if (currentImage3 === 1) {
+        imageElement3.src = "b-project(1).png";
+        imageElement3.alt = "Image 4";
+        currentImage3 = 2;
+      } else {
+        imageElement3.src = "b-project.png";
+        imageElement3.alt = "Image 3";
+        currentImage3 = 1;
+      }
+    });
+
+    const AButton = document.getElementById("AButton");
+    const imageElement5 = document.getElementById("image5");
+    let currentImage5 = 1;
+
+    AButton.addEventListener("click", () => {
+      if (currentImage5 === 1) {
+        imageElement5.src = "MF(1).png";
+        imageElement5.alt = "Image 6";
+        currentImage5 = 2;
+      } else {
+        imageElement5.src = "MF.png";
+        imageElement5.alt = "Image 5";
+        currentImage5 = 1;
+      }
+    });
+  </script>
+</body>
+</html>
